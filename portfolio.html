@@ -17,7 +17,7 @@
     <!-- Шапка сайта -->
     <header class="page-header">
         <div class="container">
-            <nav>
+            <nav class="navigate">
                 <a href="./index.html" class="logo link" lang="en"><span class="web">Web</span>Studio</a>
                 <ul class="site-nav list">
                     <li class="site-nav-item"><a href="./index.html" class="link current">Студия</a></li>
@@ -26,8 +26,19 @@
                 </ul>
             </nav>
             <ul class="contacts list top">
-                <li class="contacts-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="contacts-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li class="contacts-item">
+                    <a href="mailto:info@devstudio.com" class="link contact-mail"> <svg class="header-contacts-svg"
+                            width="16px" height="12px">
+                            <use href="./images/icons/sprite2.svg#icon-envelope" class="mail"></use>
+                        </svg> info@devstudio.com </a>
+                </li>
+    
+                <li class="contacts-item">
+                    <a href="tel:+380961111111" class="link contact-mobile"> <svg class="header-contacts-svg" width="10px"
+                            height="16px">
+                            <use href="./images/icons/sprite2.svg#icon-smartphone" class="mobile"></use>
+                        </svg> +38 096 111 11 11 </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -150,18 +161,58 @@
     </main>
 
     <!-- Футер -->
-        <footer class="footer">
-            <div class="container">
-            <a href="./index.html" class="second logo link" lang="en"><span class="web">Web</span><span class="logo-footer">Studio</span></a>
-            <address class="address">
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="contacts list bottom">
-                    <li class="mailto"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-                    <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
-                </ul>
-            </address>
+    <footer class="footer">
+        <div class="container main">
+            <div class="block-contacts">
+                <a href="./index.html" class="second logo link" lang="en"><span class="web">Web</span><span
+                        class="logo-footer">Studio</span></a>
+                <address class="address">
+                    <p>г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="contacts list bottom">
+                        <li class="mailto"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+                        <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
             </div>
-        </footer>
+    
+            <div class="block-socials">
+                <h3>Присоединяйтесь</h3>
+                <ul class="list social-icons">
+                    <li class="social-icons-item">
+                        <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icons-svg">
+                                <use href="./images/icons/sprite2.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="social-icons-item">
+                        <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icons-svg">
+                                <use href="./images/icons/sprite2.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="social-icons-item">
+                        <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icons-svg">
+                                <use href="./images/icons/sprite2.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="social-icons-item">
+                        <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icons-svg">
+                                <use href="./images/icons/sprite2.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
